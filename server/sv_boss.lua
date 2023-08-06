@@ -187,6 +187,7 @@ RegisterNetEvent('qb-bossmenu:server:FireEmployee', function(target)
 			if Employee.Functions.SetJob("unemployed", '0') then
 				TriggerEvent("qb-log:server:CreateLog", "bossmenu", "Job Fire", "red", Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. ' successfully fired ' .. Employee.PlayerData.charinfo.firstname .. " " .. Employee.PlayerData.charinfo.lastname .. " (" .. Player.PlayerData.job.name .. ")", false)
 				TriggerClientEvent('QBCore:Notify', src, "Employee fired!", "success")
+				TriggerEvent('ps-multijob:server:removeJob', target) -- ps-multijob
 				TriggerClientEvent('QBCore:Notify', Employee.PlayerData.source , "You have been fired! Good luck.", "error")
 			else
 				TriggerClientEvent('QBCore:Notify', src, "Error..", "error")
@@ -211,6 +212,7 @@ RegisterNetEvent('qb-bossmenu:server:FireEmployee', function(target)
 			job.grade.level = 0
 			MySQL.update('UPDATE players SET job = ? WHERE citizenid = ?', { json.encode(job), target })
 			TriggerClientEvent('QBCore:Notify', src, "Employee fired!", "success")
+			TriggerEvent('ps-multijob:server:removeJob', target) -- ps-multijob
 			TriggerEvent("qb-log:server:CreateLog", "bossmenu", "Job Fire", "red", Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. ' successfully fired ' .. Employee.PlayerData.charinfo.firstname .. " " .. Employee.PlayerData.charinfo.lastname .. " (" .. Player.PlayerData.job.name .. ")", false)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "Civilian not in city.", "error")

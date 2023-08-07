@@ -28,8 +28,8 @@ Config.BossMenus = {
     ['sapr'] = {
         vector3(386.9, 798.65, 190.49), -- Park Ranger
     },
-    ['realestate'] = {
-        vector3(-716.11, 261.21, 84.14),
+    ['realtor'] = {
+        vector3(-714.88, 261.07, 84.14),
     },
     ['taxi'] = {
         vector3(907.24, -150.19, 74.17),
@@ -83,8 +83,8 @@ Config.BossMenuZones = {
     ['sapr'] = {
         { coords = vector3(386.9, 798.65, 190.49), length = 0.35, width = 0.45, heading = 197.35, minZ = 188.58, maxZ = 192.68 }, -- Park Ranger
     },
-    ['realestate'] = {
-        { coords = vector3(-716.11, 261.21, 84.14), length = 0.6, width = 1.0, heading = 25.0, minZ = 83.943, maxZ = 84.74 },
+    ['realtor'] = {
+        { coords = vector3(-714.88, 261.07, 84.14), length = 0.6, width = 1.0, heading = 74.28, minZ = 82.943, maxZ = 86.74 },
     },
     ['taxi'] = {
         { coords = vector3(907.24, -150.19, 74.17), length = 1.0, width = 3.4, heading = 327.0, minZ = 73.17, maxZ = 74.57 },

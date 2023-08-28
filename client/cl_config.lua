@@ -35,7 +35,7 @@ Config.BossMenus = {
         vector3(907.24, -150.19, 74.17),
     },
     ['cardealer'] = {
-        vector3(144.54, -1100.43, 29.2),
+        vector3(2738.54, 3479.79, 56.48),
     },
     ['sanders'] = {
         vector3(287.89, -1160.12, 29.29),
@@ -90,7 +90,7 @@ Config.BossMenuZones = {
         { coords = vector3(907.24, -150.19, 74.17), length = 1.0, width = 3.4, heading = 327.0, minZ = 73.17, maxZ = 74.57 },
     },
     ['cardealer'] = {
-        { coords = vector3(144.54, -1100.43, 29.2), length = 2.4, width = 1.05, heading = 340.0, minZ = 26.07, maxZ = 32.67 },
+        { coords = vector3(2738.54, 3479.79, 56.48), length = 2.4, width = 1.05, heading = 230.5, minZ = 54.07, maxZ = 58.67 },
     },
     ['sanders'] = {
         { coords = vector3(287.89, -1160.12, 29.29), length = 2.4, width = 1.05, heading = 304.32, minZ = 27.07, maxZ = 31.67 },
@@ -113,14 +113,14 @@ Config.BossMenuZones = {
 }
 
 Config.GangMenus = {
-    ['lostmc'] = {
-        vector3(0, 0, 0),
+    ['sakuras'] = {
+        vector3(1769.01, -1603.3, 112.64),
     },
-    ['ballas'] = {
-        vector3(0, 0, 0),
+    ['cdt'] = {
+        vector3(518.48, -2758.07, 6.64),
     },
-    ['vagos'] = {
-        vector3(0, 0, 0),
+    ['spades'] = {
+        vector3(985.91, -133.92, 78.89),
     },
     ['cartel'] = {
         vector3(0, 0, 0),
@@ -131,9 +131,13 @@ Config.GangMenus = {
 }
 
 Config.GangMenuZones = {
-    --[[
-    ['gangname'] = {
-        { coords = vector3(0.0, 0.0, 0.0), length = 0.0, width = 0.0, heading = 0.0, minZ = 0.0, maxZ = 0.0 },
+    ['sakuras'] = {
+        { coords = vector3(1769.01, -1603.3, 112.64), length = 2.4, width = 1.05, heading = 279.48, minZ = 110.0, maxZ = 114.0 },
     },
-    ]]
+    ['cdt'] = {
+        { coords = vector3(518.48, -2758.07, 6.64), length = 2.4, width = 1.05, heading = 238.98, minZ = 4.64, maxZ = 6.64 },
+    },
+    ['spades'] = {
+        { coords = vector3(985.91, -133.92, 78.89), length = 2.4, width = 1.05, heading = 147.91, minZ = 76.89, maxZ = 80.89 },
+    },
 }

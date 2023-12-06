@@ -32,7 +32,7 @@ Config.BossMenus = {
         vector3(-714.88, 261.07, 84.14),
     },
     ['taxi'] = {
-        vector3(907.24, -150.19, 74.17),
+        vector3(894.96, -179.07, 74.7),
     },
     ['cardealer'] = {
         vector3(2738.54, 3479.79, 56.48),
@@ -59,23 +59,13 @@ Config.BossMenus = {
 
 Config.BossMenuZones = {
     ['police'] = {
-        [1] = { coords = vector3(460.65, -985.52, 30.73), length = 0.35, width = 0.45, heading = 351.0, minZ = 30.58, maxZ = 30.68 }, -- MRPD
-        [2] = { coords = vector3(358.93, -1590.69, 31.05), length = 0.35, width = 0.45, heading = 351.0, minZ = 29.58, maxZ = 33.68 }, -- Davis PS
-        [3] = { coords = vector3(856.63, -1299.91, 28.26), length = 0.35, width = 0.45, heading = 351.0, minZ = 26.58, maxZ = 30.68 }, -- La Mesa PD
-    },
+        { coords = vector3(447.23, -974.3, 31.47), length = 1.35, width = 1.45, heading = 351.0, minZ = 30.00, maxZ = 31.73 }, },
     ['ambulance'] = {
-        [1] = { coords = vector3(335.46, -594.52, 43.28), length = 1.2, width = 0.6, heading = 341.0, minZ = 43.13, maxZ = 43.73 }, -- Pillbox Hospital
-        [2] = { coords = vector3(-616.54, -97.5, 45.64), length = 1.2, width = 0.6, heading = 80.13, minZ = 43.13, maxZ = 47.73 }, -- Fire HQ
-        [3] = { coords = vector3(-257.73, 6332.18, 32.43), length = 1.2, width = 0.6, heading = 341.0, minZ = 30.13, maxZ = 34.73 }, -- Paleto Hospital
-        [4] = { coords = vector3(194.22, -1644.11, 29.8), length = 1.2, width = 0.6, heading = 229.28, minZ = 27.13, maxZ = 31.73 }, -- Davis FD
-        [5] = { coords = vector3(1187.27, -1475.46, 34.86), length = 1.2, width = 0.6, heading = 277.88, minZ = 32.13, maxZ = 36.73 }, -- LaMesa FD
-        [6] = { coords = vector3(1650.08, 3661.74, 35.34), length = 1.2, width = 0.6, heading = 341.0, minZ = 33.13, maxZ = 37.73 }, -- Sandy Hospital
-        [7] = { coords = vector3(-504.45, -298.6, 42.32), length = 1.2, width = 0.6, heading = 341.0, minZ = 40.13, maxZ = 44.73 }, -- Mount Zonah
-
+        { coords = vector3(335.46, -594.52, 43.28), length = 1.2, width = 0.6, heading = 341.0, minZ = 43.13, maxZ = 43.73 },
     },
     ['bcso'] = {
-        [1] = { coords = vector3(1824.91, 3671.97, 38.86), length = 0.35, width = 0.45, heading = 351.0, minZ = 36.58, maxZ = 40.68 }, -- Sandy PD
-        [2] = { coords = vector3(-432.94, 6006.01, 37.0), length = 0.35, width = 0.45, heading = 351.0, minZ = 30.58, maxZ = 30.68 }, -- Paleto PD
+        { coords = vector3(1824.91, 3671.97, 38.86), length = 0.35, width = 0.45, heading = 351.0, minZ = 36.58, maxZ = 40.68 }, -- Sandy PD
+        { coords = vector3(-432.94, 6006.01, 37.0), length = 0.35, width = 0.45, heading = 351.0, minZ = 30.58, maxZ = 30.68 }, -- Paleto PD
     },
     ['sasp'] = {
         { coords = vector3(1539.4, 815.78, 82.13), length = 0.35, width = 0.45, heading = 351.0, minZ = 30.58, maxZ = 30.68 }, -- SASP
@@ -87,7 +77,7 @@ Config.BossMenuZones = {
         { coords = vector3(-714.88, 261.07, 84.14), length = 0.6, width = 1.0, heading = 74.28, minZ = 82.943, maxZ = 86.74 },
     },
     ['taxi'] = {
-        { coords = vector3(907.24, -150.19, 74.17), length = 1.0, width = 3.4, heading = 327.0, minZ = 73.17, maxZ = 74.57 },
+        { coords = vector3(894.96, -179.07, 74.7), length = 1.0, width = 3.4, heading = 327.0, minZ = 73.17, maxZ = 74.57 },
     },
     ['cardealer'] = {
         { coords = vector3(2738.54, 3479.79, 56.48), length = 2.4, width = 1.05, heading = 230.5, minZ = 54.07, maxZ = 58.67 },

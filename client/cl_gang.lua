@@ -26,14 +26,6 @@ RegisterNetEvent('QBCore:Client:OnGangUpdate', function(InfoGang)
     PlayerGang = InfoGang
 end)
 
-RegisterNetEvent('qb-gangmenu:client:Stash', function()
-    TriggerServerEvent('inventory:server:OpenInventory', 'stash', 'boss_' .. PlayerGang.name, {
-        maxweight = 4000000,
-        slots = 100,
-    })
-    TriggerEvent('inventory:client:SetCurrentStash', 'boss_' .. PlayerGang.name)
-end)
-
 RegisterNetEvent('qb-gangmenu:client:Warbobe', function()
     TriggerEvent('qb-clothing:client:openOutfitMenu')
 end)
@@ -81,7 +73,8 @@ RegisterNetEvent('qb-gangmenu:client:OpenMenu', function()
             txt = Lang:t('bodygang.storaged'),
             icon = 'fa-solid fa-box-open',
             params = {
-                event = 'qb-gangmenu:client:Stash',
+                isServer = true,
+                event = 'qb-gangmenu:server:stash',
             }
         },
         {
@@ -224,14 +217,13 @@ end)
 
 CreateThread(function()
     if Config.UseTarget then
-        for gang, zones in pairs(Config.GangMenuZones) do
-            for index, data in ipairs(zones) do
-                exports['qb-target']:AddBoxZone(gang .. '-GangMenu' .. index, data.coords, data.length, data.width, {
-                    name = gang .. '-GangMenu' .. index,
-                    heading = data.heading,
-                    -- debugPoly = true,
-                    minZ = data.minZ,
-                    maxZ = data.maxZ,
+        for gang, zones in pairs(Config.GangMenus) do
+            for index, coords in ipairs(zones) do
+                local zoneName = gang .. '_gangmenu_' .. index
+                exports['qb-target']:AddCircleZone(zoneName, coords, 0.5, {
+                    name = zoneName,
+                    debugPoly = false,
+                    useZ = true
                 }, {
                     options = {
                         {
